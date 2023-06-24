@@ -2,22 +2,22 @@ import styled, { css } from 'styled-components';
 
 const titleSize = {
   small: (theme) => css`
-    font-size: ${theme.sizes.medium};
+    font-size: ${theme.fonts.sizes.medium};
   `,
   medium: (theme) => css`
-    font-size: ${theme.sizes.large};
+    font-size: ${theme.fonts.sizes.large};
   `,
   big: (theme) => css`
-    font-size: ${theme.sizes.xlarge};
+    font-size: ${theme.fonts.sizes.xlarge};
   `,
   huge: (theme) => css`
-    font-size: ${theme.sizes.xhuge};
+    font-size: ${theme.fonts.sizes.xhuge};
   `,
 };
 
 const mediaFont = (theme) => css`
   @media ${theme.media.lteMedium} {
-    font-size: ${theme.sizes.large};
+    font-size: ${theme.fonts.sizes.large};
   }
 `;
 

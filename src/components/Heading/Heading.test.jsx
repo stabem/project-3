@@ -11,7 +11,7 @@ describe('<Heading />', () => {
 
     expect(heading).toHaveStyle({
       color: theme.colors.primaryColor,
-      'font-size': theme.sizes.xlarge,
+      'font-size': theme.fonts.sizes.xlarge,
       'text-transform': 'none',
     });
   });
@@ -30,7 +30,7 @@ describe('<Heading />', () => {
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
-      'font-size': theme.sizes.medium,
+      'font-size': theme.fonts.sizes.medium,
     });
   });
 
@@ -38,7 +38,7 @@ describe('<Heading />', () => {
     renderTheme(<Heading size="huge">texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
 
-    expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyleRule('font-size', theme.sizes.large, {
+    expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyleRule('font-size', theme.fonts.sizes.large, {
       media: theme.media.lteMedium,
     });
   });
